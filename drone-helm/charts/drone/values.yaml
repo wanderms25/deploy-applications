@@ -69,7 +69,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: 0b68-170-245-250-11.sa.ngrok.io
+    - host: 2d24-177-149-153-0.sa.ngrok.io
       paths:
         - path: /
           pathType: Prefix
@@ -183,7 +183,7 @@ env:
   ## REQUIRED: Set the user-visible Drone hostname, sans protocol.
   ## Ref: https://docs.drone.io/installation/reference/drone-server-host/
   ##
-  DRONE_SERVER_HOST: 0b68-170-245-250-11.sa.ngrok.io
+  DRONE_SERVER_HOST: 2d24-177-149-153-0.sa.ngrok.io
   ## The protocol to pair with the value in DRONE_SERVER_HOST (http or https).
   ## Ref: https://docs.drone.io/installation/reference/drone-server-proto/
   ##
@@ -194,7 +194,7 @@ env:
   ## key via a separately provisioned secret (see existingSecretName above).
   ## Ref: https://docs.drone.io/installation/reference/drone-rpc-secret/
   ##
-  DRONE_RPC_SECRET: 75ae36bfe5d80821d0921211d345782d
+  DRONE_RPC_SECRET: 63fc652cbe3cf760b9e54f3f036146f1
   DRONE_USER_CREATE: username:uzielferreira,admin:true
   DRONE_USER_FILTER: uzielferreira
 
