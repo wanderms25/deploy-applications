@@ -1,3 +1,3 @@
 # deploy-applications
-Repositório de para deploy de aplicações pelo Argo CD
+Repositório para deploy de aplicações pelo Argo CD
 
