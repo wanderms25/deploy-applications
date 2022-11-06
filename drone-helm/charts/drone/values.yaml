@@ -227,8 +227,8 @@ env:
   ## GitHub-specific variables. See the provider docs here:
   ## Ref: https://docs.drone.io/installation/providers/github/
   ##
-  DRONE_GITHUB_CLIENT_ID: 175c0b945d2b5cb8a2a6
-  DRONE_GITHUB_CLIENT_SECRET: ee10f54e578b314f5215a483dde027a69161cb76
+  DRONE_GITHUB_CLIENT_ID: e5abed7c8338e77790d9
+  DRONE_GITHUB_CLIENT_SECRET: 67326f6eba2888ad8404b3995e0bd3a5e9eb699f
 
   ## GitLab-specific variables. See the provider docs here:
   ## Ref: https://docs.drone.io/installation/providers/gitlab/
