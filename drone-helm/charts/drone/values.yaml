@@ -194,7 +194,7 @@ env:
   ## key via a separately provisioned secret (see existingSecretName above).
   ## Ref: https://docs.drone.io/installation/reference/drone-rpc-secret/
   ##
-  DRONE_RPC_SECRET: 63fc652cbe3cf760b9e54f3f036146f1
+  DRONE_RPC_SECRET: 3fb51439ef791e0770bf98aa19f838de
   DRONE_USER_CREATE: username:uzielferreira,admin:true
   DRONE_USER_FILTER: uzielferreira
 
