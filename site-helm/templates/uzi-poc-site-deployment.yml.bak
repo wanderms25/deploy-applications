@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+
+#Qual tipo de objeto pretende criar.
+kind: Deployment
+
+#Dados que ajudam a identificar de forma única o objeto, incluindo uma string nome, UID e um namespace
+metadata:
+  name: {{ .Release.Name }}-site-poc-uzi
+
+#Que estado deseja para o objeto.
+spec:
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}-site-poc-uzi
+  replicas: 2 # diz ao deployment para executar 2 pods que correspondam ao modelo
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}-site-poc-uzi
+    spec:
+      containers:
+      - name: {{ .Release.Name }}-site-poc-uzi
+        imagePullPolicy: Always
+        image: uzieljr/poc-site:4ddc549
+        ports:
+        - containerPort: 80        
