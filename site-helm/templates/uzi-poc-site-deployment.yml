@@ -22,10 +22,6 @@ spec:
       containers:
       - name: site-poc-uzi
         imagePullPolicy: Always
-<<<<<<< HEAD
         image: uzieljr/poc-site:latest
-=======
-        image: uzieljr/poc-site:920a6e8
->>>>>>> 301cf327fcbb8ae43afbf30597841df411ab6628
         ports:
         - containerPort: 80        
