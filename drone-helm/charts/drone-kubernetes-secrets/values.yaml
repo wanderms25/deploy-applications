@@ -85,7 +85,7 @@ env:
   ## This is commented out in order to leave you the ability to set the
   ## key via a separately provisioned secret (see existingSecretName above).
   ##
-  SECRET_KEY: 3fb51439ef791e0770bf98aa19f838de
+  SECRET_KEY: 781b4336bbbdabfe183cf61d937630f2
 
   ## The Kubernetes namespace to retrieve secrets from.
   ##
