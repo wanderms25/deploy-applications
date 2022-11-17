@@ -115,7 +115,7 @@ env:
   ## key via a separately provisioned secret (see existingSecretName above).
   ## Ref: https://kube-runner.docs.drone.io/installation/reference/drone-rpc-secret/
   ##
-  DRONE_RPC_SECRET: 781b4336bbbdabfe183cf61d937630f2
+  DRONE_RPC_SECRET: b2746d9f680ab61e7636c7285a929307
   DRONE_LOGS_TRACE: true
 
   ## The hostname/IP (and optionally the port) for your Kubernetes runner. Defaults to the "drone"
