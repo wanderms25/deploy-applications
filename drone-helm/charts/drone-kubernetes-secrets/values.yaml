@@ -89,4 +89,4 @@ env:
 
   ## The Kubernetes namespace to retrieve secrets from.
   ##
-  KUBERNETES_NAMESPACE: drone-space
+  KUBERNETES_NAMESPACE: drone
