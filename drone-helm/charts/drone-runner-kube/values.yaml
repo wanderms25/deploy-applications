@@ -99,7 +99,7 @@ extraSecretNamesForEnvFrom: []
 ## namespaces.
 rbac:
   buildNamespaces:
-    - drone-space
+    - drone
 
 ## If you require annotations on the drone-runner-kube service account declare them here.
 serviceAccount:
@@ -122,7 +122,7 @@ env:
   ## service that the drone server Chart creates by default.
   ## Ref: https://kube-runner.docs.drone.io/installation/reference/drone-rpc-host/
   ##
-  DRONE_RPC_HOST: uzi-drone-poc
+  DRONE_RPC_HOST: drone
 
   ## The protocol to use for communication with Drone server.
   ## Ref: https://kube-runner.docs.drone.io/installation/reference/drone-rpc-proto/
@@ -132,4 +132,4 @@ env:
   ## Determines the default Kubernetes namespace for Drone builds to run in.
   ## Ref: https://kube-runner.docs.drone.io/installation/reference/drone-namespace-default/
   ##
-  DRONE_NAMESPACE_DEFAULT: drone-space
+  DRONE_NAMESPACE_DEFAULT: drone
