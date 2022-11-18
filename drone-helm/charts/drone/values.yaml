@@ -196,7 +196,7 @@ env:
   ##
   DRONE_RPC_SECRET: b2746d9f680ab61e7636c7285a929307
   DRONE_USER_CREATE: username:wanderms25,admin:true
-#   DRONE_USER_FILTER: wanderms25
+  # DRONE_USER_FILTER: wanderms25
 
   ## If you'd like to use a DB other than SQLite (the default), set a driver + DSN here.
   ## Ref: https://docs.drone.io/installation/storage/database/
