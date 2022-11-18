@@ -69,7 +69,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: a553-189-38-136-246.sa.ngrok.io
+    - host: 20.206.229.217:32000
       paths:
         - path: /
           pathType: Prefix
@@ -183,11 +183,11 @@ env:
   ## REQUIRED: Set the user-visible Drone hostname, sans protocol.
   ## Ref: https://docs.drone.io/installation/reference/drone-server-host/
   ##
-  DRONE_SERVER_HOST: a553-189-38-136-246.sa.ngrok.io
+  DRONE_SERVER_HOST: 20.206.229.217:32000
   ## The protocol to pair with the value in DRONE_SERVER_HOST (http or https).
   ## Ref: https://docs.drone.io/installation/reference/drone-server-proto/
   ##
-  DRONE_SERVER_PROTO: https
+  DRONE_SERVER_PROTO: http
 
   ## REQUIRED: Set the secret secret token that the Drone server and its Runners will use
   ## to authenticate. This is commented out in order to leave you the ability to set the
@@ -196,7 +196,7 @@ env:
   ##
   DRONE_RPC_SECRET: b2746d9f680ab61e7636c7285a929307
   DRONE_USER_CREATE: username:wanderms25,admin:true
-  DRONE_USER_FILTER: wanderms25
+#   DRONE_USER_FILTER: wanderms25
 
   ## If you'd like to use a DB other than SQLite (the default), set a driver + DSN here.
   ## Ref: https://docs.drone.io/installation/storage/database/
