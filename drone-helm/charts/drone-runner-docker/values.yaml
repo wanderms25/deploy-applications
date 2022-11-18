@@ -163,7 +163,7 @@ env:
   ## service that the drone server Chart creates by default.
   ## Ref: https://docs.drone.io/runner/docker/configuration/reference/drone-rpc-host/
   ##
-  DRONE_RPC_HOST: drone
+  DRONE_RPC_HOST: 20.206.229.217:32000
 
   ## The protocol to use for communication with Drone server.
   ## Ref: https://docs.drone.io/runner/docker/configuration/reference/drone-rpc-proto/
