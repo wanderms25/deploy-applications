@@ -13,7 +13,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 
 metadata:
-  name: uzi-drone-poc
+  name: drone
   namespace: argocd
   ### ATENCAO: o parametro finalizer abaixo deleta dodos os pods e namespace criada pelo arquivo application.yml quando usado o comando kubectl delete application.yml
   finalizers:
@@ -22,10 +22,10 @@ metadata:
 spec:
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: drone-space
+    namespace: drone
   project: default  
   source:
-    repoURL: 'https://github.com/uzieljr/deploy-applications.git'
+    repoURL: 'https://github.com/wanderms25/deploy-applications.git'
     path: drone-helm/charts/drone
     targetRevision: HEAD
     helm:
@@ -51,7 +51,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 
 metadata:
-  name: uzi-drone-runer-poc
+  name: drone-runer
   namespace: argocd
   ### ATENCAO: o parametro finalizer abaixo deleta dodos os pods e namespace criada pelo arquivo application.yml quando usado o comando kubectl delete application.yml
   finalizers:
@@ -60,10 +60,10 @@ metadata:
 spec:
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: drone-space
+    namespace: drone
   project: default  
   source:
-    repoURL: 'https://github.com/uzieljr/deploy-applications.git'
+    repoURL: 'https://github.com/wanderms25/deploy-applications.git'
     path: drone-helm/charts/drone-runner-kube
     targetRevision: HEAD
     helm:
@@ -95,10 +95,10 @@ metadata:
 spec:
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: drone-space
+    namespace: drone
   project: default  
   source:
-    repoURL: 'https://github.com/uzieljr/deploy-applications.git'
+    repoURL: 'https://github.com/wanderms25/deploy-applications.git'
     path: drone-helm/charts/drone-kubernetes-secrets
     targetRevision: HEAD
     helm:
