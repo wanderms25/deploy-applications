@@ -54,7 +54,7 @@ podAnnotations: {}
 updateStrategy: {}
 
 service:
-  type: LoadBalance
+  type: LoadBalancer
   port: 80
   annotations: {}
   nodePort:
