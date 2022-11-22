@@ -54,7 +54,7 @@ podAnnotations: {}
 updateStrategy: {}
 
 service:
-  type: LoadBalancer
+  type: NodePort
   port: 80
   annotations: {}
   nodePort:
@@ -188,7 +188,7 @@ env:
   ## Ref: https://docs.drone.io/installation/reference/drone-server-proto/
   ##
   DRONE_SERVER_PROTO: https
-  
+
   DRONE_TLS_CERT: cert.pem
   DRONE_TLS_KEY: key.pem
 
