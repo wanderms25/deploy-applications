@@ -168,4 +168,4 @@ env:
   ## The protocol to use for communication with Drone server.
   ## Ref: https://docs.drone.io/runner/docker/configuration/reference/drone-rpc-proto/
   ##
-  DRONE_RPC_PROTO: http
+  DRONE_RPC_PROTO: https

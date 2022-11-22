@@ -127,7 +127,7 @@ env:
   ## The protocol to use for communication with Drone server.
   ## Ref: https://kube-runner.docs.drone.io/installation/reference/drone-rpc-proto/
   ##
-  DRONE_RPC_PROTO: http
+  DRONE_RPC_PROTO: https
 
   ## Determines the default Kubernetes namespace for Drone builds to run in.
   ## Ref: https://kube-runner.docs.drone.io/installation/reference/drone-namespace-default/
